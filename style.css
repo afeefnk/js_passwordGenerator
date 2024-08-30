@@ -52,7 +52,7 @@ body {
     border: 0;
     outline: 0;
     font-size: 20px;
-    width: 80%;
+    width: 100%;
 }
 
 .container button img {
@@ -84,20 +84,19 @@ body {
     }
 
     .display {
-        flex-direction: column;
-        align-items: stretch;
         padding: 15px;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .display input {
         font-size: 18px;
-        width: 100%;
-        margin-bottom: 10px;
+        width: calc(100% - 40px); /* Adjusted width to leave space for the icon */
     }
 
     .display img {
         width: 20px;
-        margin: 0 auto;
+        margin-left: 10px;
     }
 
     .container button {
@@ -113,10 +112,18 @@ body {
 
     .display {
         padding: 12px;
+        align-items: center;
+        justify-content: space-between;
     }
 
     .display input {
         font-size: 16px;
+        width: calc(100% - 35px); /* Adjusted width to leave space for the icon */
+    }
+
+    .display img {
+        width: 18px;
+        margin-left: 5px;
     }
 
     .container button {
